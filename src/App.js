@@ -1,8 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Main from "./components/Main";
 
 function App() {
-  return <h1>Welcome to KKCaptialco</h1>;
+  return (
+    <>
+      <Main />
+    </>
+  );
 }
 
 export default App;
