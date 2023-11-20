@@ -1,4 +1,5 @@
 import React from "react";
+// this is bank partners 1
 const banks = [
   {
     name: "HDFC",
