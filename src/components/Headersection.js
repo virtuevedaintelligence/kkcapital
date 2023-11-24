@@ -3,6 +3,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Imageslider from "./Imageslider";
 
 const navigation1 = [
   { name: "About", href: "#about" },
@@ -80,7 +81,9 @@ const Headersection = () => {
           <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             {/* Replace with your content */}
             <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
-              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96">display image slider </div>
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96">
+                <Imageslider />
+              </div>
             </div>
             {/* /End replace */}
           </div>

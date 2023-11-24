@@ -11,3 +11,20 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* image slide code */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  height: 70vh;
+}

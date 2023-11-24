@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
           <div className="lg:pr-8">
             <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Contact Us</h2>
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Get in touch!</h2>
               <p className="mt-4 text-lg text-gray-500 sm:mt-3">We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear from you! Send us a message using the form opposite, or email us.</p>
               <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div>
@@ -20,7 +20,7 @@ const Contact = () => {
                     First name
                   </label>
                   <div className="mt-1">
-                    <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
+                    <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="First Name" />
                   </div>
                 </div>
                 <div>
@@ -28,7 +28,15 @@ const Contact = () => {
                     Last name
                   </label>
                   <div className="mt-1">
-                    <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
+                    <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Last Name" />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="nameOfCompany" className="block text-sm font-medium text-gray-700">
+                    Name of Company
+                  </label>
+                  <div className="mt-1">
+                    <input id="nameOfCompany" name="nameOfCompany" type="text" autoComplete="nameOfCompany" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Name of Company" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
@@ -36,30 +44,54 @@ const Contact = () => {
                     Email
                   </label>
                   <div className="mt-1">
-                    <input id="email" name="email" type="email" autoComplete="email" className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
+                    <input id="email" name="email" type="email" autoComplete="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Email" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700">
-                    Company
+                  <label htmlFor="contact" className="block text-sm font-medium text-gray-700">
+                    Contact Number
                   </label>
                   <div className="mt-1">
-                    <input type="text" name="company" id="company" autoComplete="organization" className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
+                    <input type="text" name="contact" id="contact" autoComplete="contact" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <div className="flex justify-between">
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                      Phone
-                    </label>
-                    <span id="phone_description" className="text-sm text-gray-500">
-                      Optional
-                    </span>
-                  </div>
+                  <label htmlFor="natureOfBusiness" className="block text-sm font-medium text-gray-700">
+                    Nature of Business
+                  </label>
                   <div className="mt-1">
-                    <input type="text" name="phone" id="phone" autoComplete="tel" aria-describedby="phone_description" className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
+                    <input type="text" name="natureOfBusiness" id="natureOfBusiness" autoComplete="natureOfBusiness" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                   </div>
                 </div>
+                <fieldset className="sm:col-span-2">
+                  <legend className="block text-sm font-medium text-gray-700">Annual Turnover</legend>
+                  <div className="mt-4 grid grid-cols-1 gap-y-4">
+                    <div className="flex items-center">
+                      <input id="budget_under_25k" name="budget" defaultValue="under_25k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                      <label htmlFor="budget_under_25k" className="ml-3">
+                        <span className="block text-sm text-gray-700">Less than &#8377;25K</span>
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input id="budget_25k-50k" name="budget" defaultValue="25k-50k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                      <label htmlFor="budget_25k-50k" className="ml-3">
+                        <span className="block text-sm text-gray-700">&#8377;25K – &#8377;50K</span>
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input id="budget_50k-100k" name="budget" defaultValue="50k-100k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                      <label htmlFor="budget_50k-100k" className="ml-3">
+                        <span className="block text-sm text-gray-700">&#8377;50K – &#8377;100K</span>
+                      </label>
+                    </div>
+                    <div className="flex items-center">
+                      <input id="budget_over_100k" name="budget" defaultValue="over_100k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                      <label htmlFor="budget_over_100k" className="ml-3">
+                        <span className="block text-sm text-gray-700">&#8377;100K+</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
                     <label htmlFor="how_can_we_help" className="block text-sm font-medium text-gray-700">
@@ -70,44 +102,7 @@ const Contact = () => {
                     </span>
                   </div>
                   <div className="mt-1">
-                    <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows={4} className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" defaultValue={""} />
-                  </div>
-                </div>
-                <fieldset className="sm:col-span-2">
-                  <legend className="block text-sm font-medium text-gray-700">Expected budget</legend>
-                  <div className="mt-4 grid grid-cols-1 gap-y-4">
-                    <div className="flex items-center">
-                      <input id="budget_under_25k" name="budget" defaultValue="under_25k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_under_25k" className="ml-3">
-                        <span className="block text-sm text-gray-700">Less than $25K</span>
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input id="budget_25k-50k" name="budget" defaultValue="25k-50k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_25k-50k" className="ml-3">
-                        <span className="block text-sm text-gray-700">$25K – $50K</span>
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input id="budget_50k-100k" name="budget" defaultValue="50k-100k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_50k-100k" className="ml-3">
-                        <span className="block text-sm text-gray-700">$50K – $100K</span>
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input id="budget_over_100k" name="budget" defaultValue="over_100k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_over_100k" className="ml-3">
-                        <span className="block text-sm text-gray-700">$100K+</span>
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-                <div className="sm:col-span-2">
-                  <label htmlFor="how_did_you_hear_about_us" className="block text-sm font-medium text-gray-700">
-                    How did you hear about us?
-                  </label>
-                  <div className="mt-1">
-                    <input type="text" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" />
+                    <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows={4} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" defaultValue={""} />
                   </div>
                 </div>
                 <div className="text-right sm:col-span-2">
