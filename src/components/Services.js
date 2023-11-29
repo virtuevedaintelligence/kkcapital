@@ -42,6 +42,20 @@ const callouts = [
     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
     href: "#",
   },
+  {
+    name: "Unsecured overdraft facilities",
+    description: "Description comes here",
+    imageSrc: "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg",
+    imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+    href: "#",
+  },
+  {
+    name: "Working capital limit(od/cc/cgtmsme/turm loan)",
+    description: "Description comes here",
+    imageSrc: "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg",
+    imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+    href: "#",
+  },
 ];
 const Services = () => {
   return (

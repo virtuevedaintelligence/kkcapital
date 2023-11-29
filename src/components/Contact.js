@@ -52,7 +52,7 @@ const Contact = () => {
                     Contact Number
                   </label>
                   <div className="mt-1">
-                    <input type="text" name="contact" id="contact" autoComplete="contact" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    <input type="text" name="contact" id="contact" autoComplete="contact" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Contact Number" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
@@ -60,49 +60,42 @@ const Contact = () => {
                     Nature of Business
                   </label>
                   <div className="mt-1">
-                    <input type="text" name="natureOfBusiness" id="natureOfBusiness" autoComplete="natureOfBusiness" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                    <select name="natureOfBusiness" id="natureOfBusiness" autoComplete="natureOfBusiness" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      <option>Trading</option>
+                      <option>Manufacturing</option>
+                      <option>Service</option>
+                    </select>
                   </div>
                 </div>
-                <fieldset className="sm:col-span-2">
-                  <legend className="block text-sm font-medium text-gray-700">Annual Turnover</legend>
-                  <div className="mt-4 grid grid-cols-1 gap-y-4">
-                    <div className="flex items-center">
-                      <input id="budget_under_25k" name="budget" defaultValue="under_25k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_under_25k" className="ml-3">
-                        <span className="block text-sm text-gray-700">Less than &#8377;25K</span>
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input id="budget_25k-50k" name="budget" defaultValue="25k-50k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_25k-50k" className="ml-3">
-                        <span className="block text-sm text-gray-700">&#8377;25K – &#8377;50K</span>
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input id="budget_50k-100k" name="budget" defaultValue="50k-100k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_50k-100k" className="ml-3">
-                        <span className="block text-sm text-gray-700">&#8377;50K – &#8377;100K</span>
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input id="budget_over_100k" name="budget" defaultValue="over_100k" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-                      <label htmlFor="budget_over_100k" className="ml-3">
-                        <span className="block text-sm text-gray-700">&#8377;100K+</span>
-                      </label>
-                    </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="annualTurnover" className="block text-sm font-medium text-gray-700">
+                    Annual Turnover
+                  </label>
+                  <div className="mt-1">
+                    <input type="text" name="annualTurnover" id="annualTurnover" autoComplete="annualTurnover" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Annual Turnover" />
                   </div>
-                </fieldset>
+                </div>
+
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
                     <label htmlFor="how_can_we_help" className="block text-sm font-medium text-gray-700">
-                      How can we help you?
+                      Your requirements and queries
                     </label>
                     <span id="how_can_we_help_description" className="text-sm text-gray-500">
                       Max. 500 characters
                     </span>
                   </div>
                   <div className="mt-1">
-                    <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows={4} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" defaultValue={""} />
+                    <textarea
+                      id="how_can_we_help"
+                      name="how_can_we_help"
+                      aria-describedby="how_can_we_help_description"
+                      rows={4}
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      defaultValue={""}
+                      placeholder="Your requirements and queries
+"
+                    />
                   </div>
                 </div>
                 <div className="text-right sm:col-span-2">
