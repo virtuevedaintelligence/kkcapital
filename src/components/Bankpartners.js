@@ -78,11 +78,11 @@ const Bankpartners = () => {
               {banks.map((bank) => (
                 <li key={bank.name}>
                   <div className="space-y-4">
-                    <img className="mx-auto h-14" src={bank.imageUrl} alt="" />
+                    <img className="mx-auto h-15" src={bank.imageUrl} alt="" />
                     <div className="space-y-2">
                       <div className="text-xs font-medium lg:text-sm">
-                        <h3>{bank.name}</h3>
-                        <p className="text-indigo-600">{bank.role}</p>
+                        {/* <h3>{bank.name}</h3> */}
+                        {/* <p className="text-indigo-600">{bank.role}</p> */}
                       </div>
                     </div>
                   </div>

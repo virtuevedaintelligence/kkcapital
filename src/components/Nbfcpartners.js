@@ -144,11 +144,11 @@ const Nbfcpartners = () => {
               {nbfcs.map((nbfc) => (
                 <li key={nbfc.name}>
                   <div className="space-y-4">
-                    <img className="mx-auto h-14" src={nbfc.imageUrl} alt="" />
+                    <img className="mx-auto h-15" src={nbfc.imageUrl} alt="" />
                     <div className="space-y-2">
                       <div className="text-xs font-medium lg:text-sm">
-                        <h3>{nbfc.name}</h3>
-                        <p className="text-indigo-600">{nbfc.role}</p>
+                        {/* <h3>{nbfc.name}</h3>
+                        <p className="text-indigo-600">{nbfc.role}</p> */}
                       </div>
                     </div>
                   </div>
