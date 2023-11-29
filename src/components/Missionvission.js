@@ -8,7 +8,7 @@ const stats = [
 const Missionvission = () => {
   return (
     <>
-      <div className="relative bg-white py-16 sm:py-24">
+      <div className="relative bg-white py-16 sm:py-24" data-aos="fade-up">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
           <div className="relative sm:py-16 lg:py-0" id="mission">
             <div aria-hidden="true" className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
