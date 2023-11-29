@@ -1,45 +1,45 @@
 import React from "react";
 /* This example requires Tailwind CSS v2.0+ */
 import team from "../assets/img/team-photo.JPG";
-const people = [
-  {
-    name: "Kiran Ashok Kalshetti",
-    role: "Proprietor",
-    imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Ramprit Yadav",
-    role: "Sales team leader",
-    imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Pankaj Devale",
-    role: "Team Leader",
-    imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Janvi Joshi",
-    role: "Head Telecaller",
-    imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Shivam Rathod",
-    role: "Manager",
-    imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
+// const people = [
+//   {
+//     name: "Kiran Ashok Kalshetti",
+//     role: "Proprietor",
+//     imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+//     twitterUrl: "#",
+//     linkedinUrl: "#",
+//   },
+//   {
+//     name: "Ramprit Yadav",
+//     role: "Sales team leader",
+//     imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+//     twitterUrl: "#",
+//     linkedinUrl: "#",
+//   },
+//   {
+//     name: "Pankaj Devale",
+//     role: "Team Leader",
+//     imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+//     twitterUrl: "#",
+//     linkedinUrl: "#",
+//   },
+//   {
+//     name: "Janvi Joshi",
+//     role: "Head Telecaller",
+//     imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+//     twitterUrl: "#",
+//     linkedinUrl: "#",
+//   },
+//   {
+//     name: "Shivam Rathod",
+//     role: "Manager",
+//     imageUrl: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+//     twitterUrl: "#",
+//     linkedinUrl: "#",
+//   },
 
-  // More people...
-];
+//   // More people...
+// ];
 const Team = () => {
   return (
     <>
@@ -50,7 +50,7 @@ const Team = () => {
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Meet our team</h2>
               <p className="text-xl text-gray-500">These members have more than 5 years of experience. They will try their best to fulfill your requirement according to your needs</p>
             </div>
-            <img src={team} className="h-96 mx-auto" />
+            <img src={team} className="h-96 mx-auto" alt="Our Team" />
             {/* <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-5 lg:max-w-7xl">
               {people.map((person) => (
                 <li key={person.name}>
