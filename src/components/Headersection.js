@@ -5,6 +5,9 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Imageslider from "./Imageslider";
 import logo from "../assets/img/kk-capital-logo.png";
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 const navigation1 = [
   { name: "About", href: "#about" },
@@ -57,14 +60,11 @@ const Headersection = () => {
                 </div>
 
                 <Disclosure.Panel className="border-b border-gray-700 md:hidden">
-                  <div className="px-2 py-3 space-y-1 sm:px-3">
+                  <div className="space-y-1 px-2 pb-3 pt-2">
                     {navigation1.map((item) => (
-                      <Fragment key={item.name}>
-                        {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                        <a href={item.href} className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
-                          {item.name}
-                        </a>
-                      </Fragment>
+                      <Disclosure.Button key={item.name} as="a" href={item.href} className={classNames(item.current ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white", "block rounded-md px-3 py-2 text-base font-medium")} aria-current={item.current ? "page" : undefined}>
+                        {item.name}
+                      </Disclosure.Button>
                     ))}
                   </div>
                 </Disclosure.Panel>
