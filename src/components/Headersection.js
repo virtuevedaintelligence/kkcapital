@@ -3,8 +3,8 @@ import React from "react";
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Imageslider from "./Imageslider";
 import logo from "../assets/img/kk-capital-logo.png";
+import ImageSlider from "./Imageslider";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -82,8 +82,8 @@ const Headersection = () => {
           <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             {/* Replace with your content */}
             <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
-              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96">
-                <Imageslider />
+              <div className="aspect-w-2 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden sm:aspect-w-5 sm:aspect-h-2">
+                <ImageSlider />
               </div>
             </div>
             {/* /End replace */}
